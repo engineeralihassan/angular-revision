@@ -1,0 +1,19 @@
+button{
+      margin: 10px;
+      background: blue;
+      padding: 10px 20px;
+      color: white;
+      border: black 1px solid;
+}
+img{
+      width: 200px;
+      height: 200px;
+      
+}
+.alert{
+      background-color: pink;
+      color: white;
+      font-size: 20px;
+      border: black 1px solid ;
+      padding: 10px 20px;
+}

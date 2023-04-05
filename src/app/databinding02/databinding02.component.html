@@ -1,0 +1,42 @@
+<div class="container">
+      <h1>All about Data Binding in angular</h1>
+      <p>there are 2 type of data binding in angular</p>
+      <ul>
+            <li>One way Data Binding</li>
+            <li>Tow way data Binding</li>
+
+      </ul>
+      <h1>1 way data binding</h1>
+      <p>class to view of components  we bind data</p>
+      <h3>o1 : string interpolations</h3>
+      <p>we used the string interpolation to write the dynamic data in our web page</p>
+      <P>when evet the property in change its also automatically change in the web page view </P>
+      <p>{{a}} + {{b}}= {{result}} this is the used of string interpolations</p>
+
+      <h1>property binding </h1>
+      <button [disabled]="btnDisabled"> Disable Btn: {{btnDisabled}}</button>
+      <img [src]="imgscr" alt="">
+     
+      <!-- progress bar -->
+      <label for="progressInput">Enter progress value:</label>
+<input id="progressInput" type="number" [(ngModel)]="inputValue" (input)="updateProgress()">
+<progress value="{{inputValue}}" max="100"></progress>
+
+<h2>Event Binding</h2>
+
+<input type="text" name="" id="" placeholder="Enter text" (input)="textChange($event)">
+<p>Search vlaue : {{searchValue}}</p>
+<p class="alert " [hidden]="showdiv"> Your message is updated 
+       <button (click)="hidemessage()">X</button></p>
+
+       <h1>2 way Data Bindings</h1>
+       <input type="text" [(ngModel)]="value" name="" id="">
+       <p>Value is: {{value}}</p>
+
+
+
+
+
+
+
+</div>
