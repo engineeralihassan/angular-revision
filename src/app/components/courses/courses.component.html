@@ -1,14 +1,19 @@
 <div class="container">
+ 
       <p>"{{ourstrenght}}"</p>
       <h1>Our Courses</h1>
 
       <div class="courses" *ngIf="coursesall.length>0 ; else nocourse"  >
-            <div class="course" *ngFor="let c of coursesall ; let i= index" >
+                 <ng-container *ngFor="let c of coursesall ; let i= index" >
+                  <!-- showcase === 'All' || showcase === c.type  -->
+            <div class="course" *ngIf="query == '' || c.name.toLowerCase().includes(query)"  >
+             
              <small>Course : {{i}}</small>   <h4>{{c.name}}</h4>
                 <small >{{c.price}}</small><small>{{c.type}}</small>
                 <button class="btn">Enroll Now</button>
-
+              
             </div>
+              </ng-container>
       </div>
       <ng-template #nocourse>
             <h1>There is No Course in this List</h1>

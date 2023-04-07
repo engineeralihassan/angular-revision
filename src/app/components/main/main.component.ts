@@ -34,18 +34,20 @@ export class MainComponent {
       id: 8, name: "Abs course", type: "premium", price: 234
     },
     {
-      id: 9, name: "Abs course", type: "premium", price: 234
+      id: 9, name: "Abs course 1", type: "premium", price: 234
     },
     {
-      id: 10, name: "Abs course", type: "premium", price: 234
+      id: 10, name: "Abs course java", type: "premium", price: 234
     },
     {
-      id: 11, name: "Abs course", type: "premium", price: 234
+      id: 11, name: "Abs course  c++", type: "premium", price: 234
     }
 
 
 
   ];
+  textedvalue: string = ' this is ';
+  queryValue: string = '';
   getpre() {
     return this.courses.filter((c) => c.type == "premium").length
   }
@@ -56,4 +58,22 @@ export class MainComponent {
     return this.courses.length;
   }
   ourstrenght: string = "Students are our strenght";
+
+  courseshow: string = "All";
+  getdataFromCustomeEvent(data: any) {
+    this.courseshow = data;
+    console.log("this is data", this.courseshow);
+  }
+  getTextValue(data: string) {
+    this.textedvalue = data;
+
+  }
+  searchcourse(data: any) {
+    this.queryValue = data;
+
+  }
+
+
+
+
 }

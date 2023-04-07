@@ -8,4 +8,7 @@ import { Component, Input } from '@angular/core';
 export class CoursesComponent {
   @Input() ourstrenght: string = '';
   @Input() coursesall: any[] = [];
+  @Input() showcase: string = '';
+  @Input() query: string = ''
+
 }
