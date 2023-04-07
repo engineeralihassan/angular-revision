@@ -14,6 +14,7 @@ import { FilterComponent } from './components/filter/filter.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { MainComponent } from './components/main/main.component';
 import { TheoryComponent } from './components/theory/theory.component';
+import { ReferenceVComponent } from './components/reference-v/reference-v.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { TheoryComponent } from './components/theory/theory.component';
     FilterComponent,
     CoursesComponent,
     MainComponent,
-    TheoryComponent
+    TheoryComponent,
+    ReferenceVComponent
   ],
   imports: [
     BrowserModule,
