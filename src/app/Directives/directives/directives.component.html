@@ -1,0 +1,86 @@
+<div class="container">
+      <h1>Directives in angular</h1>
+      <p>Directives are the instructions to angular for changing in dom add remove  from Dom </p>
+      <ul>
+            <h1>Types of Directives</h1>
+            <li>Structural Directives :  <p> Change the Dom Add Remove from dom</p> </li>
+            <li> Behavioral Directives  : Change the Behaviirs colors apearance of the webpage</li>
+            
+      </ul>
+
+      <h1 class="directivename">
+       ngFor Directive
+
+      </h1>
+
+
+      <p>Its structural directive its used for the loop over the eleemtns of an array  </p>
+      <ul>
+            <h1>Most famouse programing languages : </h1>
+            <div *ngFor="let l of [12,34,56,78,90]">
+                  <li>{{l}}</li>
+            </div>
+           
+      </ul>
+      <ul>
+            <h1>Most best Friends </h1>
+            <div  *ngFor="let l of arr ; let i=index">
+                  <li [ngStyle]="{color: i%2 ==0 ? 'Green' : 'Red'}"> on #  {{i}} : {{l}}</li>
+            </div>
+           
+      </ul>
+
+        <h1 class="directivename">
+       ngStyle Directive
+
+      </h1>
+<p>ngStyle is an behavioral directives its used to change the apearance of the webpage </p>
+<p>its used to change the behaviors like colors bg-colors styles every things</p>
+<h2>couting of conditional colors</h2>
+<ul>
+      <li *ngFor="let i of ar; let n=index"> 
+            <p [ngStyle]="{color: n%2==0? 'blueviolet' :'Red'}">
+                {{i}}
+            </p></li>
+
+
+</ul>
+<button *ngFor="let btn of colors ; let i=index" [ngStyle]="{'background-color': colors[i],'color':colors[i+1], padding: '10px 20px '}"></button>
+ <ul>
+      <li *ngFor="let item of items; let i = index" [ngStyle]="{ 'background-color': item.checked ? 'green' : 'red' }">
+        <label>
+          <input type="checkbox" [(ngModel)]="item.checked" />
+          {{ item.name }}
+        </label>
+      </li>
+    </ul>
+
+<h1 class="directivename">ngIf Directives </h1>
+
+<input type="text" name="input" placeholder="No bad words" [(ngModel)]="search" id="">
+<p [ngStyle]="{'background-color':search!==''? 'Red':'Green'}">you search : </p>
+<p *ngIf="search.includes('sex')">Warning You are Not allowed this kind of Words  😍</p>
+<button (click)="showLoading()">Show Loading and Message</button>
+<div *ngIf="isLoading">
+  Loading...
+</div>
+
+<div *ngIf="!isLoading && !showMessage">
+  <!-- No message to show yet -->
+</div>
+
+<div *ngIf="!isLoading && showMessage">
+  Your message here
+</div>
+
+
+
+<h1 class="directivename"> ngClass Directive </h1>
+
+<p>its an behavioral directive its used to add remove the class conditionalyy lets see some examples </p>
+<p [ngClass]="{'shadow': search !==''}">{{ search==''? "The class is not apply": "The class is applu here"}}</p>
+
+
+
+
+</div>

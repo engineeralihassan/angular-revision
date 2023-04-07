@@ -1,0 +1,21 @@
+.directivename{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+ul{
+      list-style:decimal;
+
+
+}
+.shadow{
+      border: 1px solid black;
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      text-align: center;
+}

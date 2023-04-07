@@ -1,0 +1,22 @@
+.container
+{
+      margin-top: 1rem;
+}
+small{
+      margin: 10px;
+      padding: 10px;
+      
+}
+.courses{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      flex-wrap: wrap;
+
+}
+.course{
+      width: 40%;
+      padding: 1rem;
+      border: 1px solid black;
+}

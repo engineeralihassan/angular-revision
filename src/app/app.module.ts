@@ -8,13 +8,25 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Databinding02Component } from './databinding02/databinding02.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './Directives/directives/directives.component';
+import { SearchComponent } from './components/search/search.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { MainComponent } from './components/main/main.component';
+import { TheoryComponent } from './components/theory/theory.component';
 @NgModule({
   declarations: [
     AppComponent,
     Component01Component,
     NavbarComponent,
     Databinding02Component,
-    FooterComponent
+    FooterComponent,
+    DirectivesComponent,
+    SearchComponent,
+    FilterComponent,
+    CoursesComponent,
+    MainComponent,
+    TheoryComponent
   ],
   imports: [
     BrowserModule,
