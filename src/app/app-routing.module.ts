@@ -6,6 +6,10 @@ import { DirectivesComponent } from './Directives/directives/directives.componen
 import { MainComponent } from './components/main/main.component';
 import { TheoryComponent } from './components/theory/theory.component';
 import { ReferenceVComponent } from './components/reference-v/reference-v.component';
+import { ViewchildComponent } from './components/viewchild/viewchild.component';
+import { NgContentComponent } from './components/ng-content/ng-content.component';
+import { LifecyclehooksComponent } from './components/lifecyclehooks/lifecyclehooks.component';
+import { ContentchildComponent } from './components/contentchild/contentchild.component';
 
 const routes: Routes = [
   { path: '', component: Component01Component },
@@ -13,9 +17,14 @@ const routes: Routes = [
   { path: 'component3', component: DirectivesComponent },
   { path: 'courses', component: MainComponent },
   { path: 'theory', component: TheoryComponent },
+  { path: 'ng-content', component: NgContentComponent },
+  { path: 'lifecyclehooks', component: LifecyclehooksComponent },
   {
     path: 'reference-v', component: ReferenceVComponent
-  }
+  },
+  { path: 'viewchild', component: ViewchildComponent },
+  { path: 'contentchild', component: ContentchildComponent },
+
 ];
 
 @NgModule({

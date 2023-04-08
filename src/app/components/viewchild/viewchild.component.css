@@ -1,0 +1,14 @@
+input{
+      padding: 10px 20px;
+}
+ul{
+      margin-top: 2rem;
+      border: 1px solid black;
+      padding: 1rem;
+      list-style: decimal;
+
+}
+li{
+      margin-top: 10px;
+
+}

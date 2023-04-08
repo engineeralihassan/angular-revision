@@ -1,8 +1,13 @@
 <div class="container">
+
       <h1 class="directiveName">The reference variables in angualr</h1>
       <p>reference variables are used to reference an element in the dom ;</p>
       <p>With the use of reference variable we can access the elements in the Ts class of the components </p>
        <input type="text" placeholder=" enter text" #search   (keyup)="null">
        <button class="btn" (click)="clickH(search)">click me</button>
        <p>{{search.value}}</p>
-</div>
+       <ng-content select="p"></ng-content>
+       <ng-content></ng-content>
+       <p>This is text that we access from the parent to child component class :::{{clg}}</p>
+         <ng-container select="para"></ng-container>
+      </div>

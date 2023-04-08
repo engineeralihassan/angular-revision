@@ -1,0 +1,23 @@
+<div class="container">
+      <h1>Life cycle hooks in angular</h1>
+      <p>This is the life cycle of hooks that angular is provid us to do diffrent things </p>
+      <ul>
+            <li> first of all the The constructor is called of the class . then other hooks is start</li>
+            <p> ngonchanges: this hook is 
+                  called on every change in the input 
+                  propertiews with @inut decorator s . this hook is not run if there is no change detected by the change detection</p>
+
+            <li>ngOnInit() :  its called after 
+                  ngOnChanges hook it class once only
+                   when the component ins initialized . there is no content ia available at this time on ngOnInit like ng-content @viewchild etc</li>
+
+      <li>ngDocheck() : its called evry time even no change is detected </li>
+      <li>ngAftercontentInit() : its called when component is fully initialized like all the @viewchild @output input text is available </li>
+      <li>ngAftercontentchecked is called on every checked change in propted content is changed  . ()</li>
+      <li>ngafterviewInit() : its called when the component view is ready its called on first time </li>
+      <li>ngafterviewchecked() calls of every change after the component view is 
+            fully initialized </li>
+            <li>ngOnDestroy() calls when an component is dstroy or remove from webpage</li>
+
+</ul>
+</div>

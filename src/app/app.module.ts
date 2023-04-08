@@ -15,6 +15,13 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { MainComponent } from './components/main/main.component';
 import { TheoryComponent } from './components/theory/theory.component';
 import { ReferenceVComponent } from './components/reference-v/reference-v.component';
+import { ViewchildComponent } from './components/viewchild/viewchild.component';
+import { Viewchild2Component } from './components/viewchild2/viewchild2.component';
+import { NgContentComponent } from './components/ng-content/ng-content.component';
+import { LifecyclehooksComponent } from './components/lifecyclehooks/lifecyclehooks.component';
+import { ContentchildComponent } from './components/contentchild/contentchild.component';
+import { SetbackgroundDirective } from './customeDirectives/setbackground.directive';
+import { HostlistnerDirective } from './customeDirectives/hostlistner.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +35,14 @@ import { ReferenceVComponent } from './components/reference-v/reference-v.compon
     CoursesComponent,
     MainComponent,
     TheoryComponent,
-    ReferenceVComponent
+    ReferenceVComponent,
+    ViewchildComponent,
+    Viewchild2Component,
+    NgContentComponent,
+    LifecyclehooksComponent,
+    ContentchildComponent,
+    SetbackgroundDirective,
+    HostlistnerDirective
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+<div class="container">
+      <h1>@viewchild Decorators</h1>
+      <p>its used to  reference of Dom Elements .get  acces of the element of Dom in the class of the components </p>
+      <p>its also used to access the child component elements in the class of the parent component</p>
+
+      <input type="date" name="date" #dob  placeholder="date picker" (blur)="calculateAge()">
+      <label >Your age is</label>
+      <input type="text" name="age" #age id="">
+      <app-viewchild2></app-viewchild2>
+      
+      {{childcomp.sayHy()}}
+      <h1>3 types of view encapsolation in angular</h1>
+      
+       <ul>
+            <li> Emulated : (bydefualt) not styled other components like child coponents</li>
+            <li>non: no encapsolation used style is apply all the element of child and parent components</li>
+            <li>shadow dom : its aply all the components but not on this component elements</li>
+       </ul>
+
+</div>
