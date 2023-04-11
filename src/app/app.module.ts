@@ -22,7 +22,12 @@ import { LifecyclehooksComponent } from './components/lifecyclehooks/lifecycleho
 import { ContentchildComponent } from './components/contentchild/contentchild.component';
 import { SetbackgroundDirective } from './customeDirectives/setbackground.directive';
 import { HostlistnerDirective } from './customeDirectives/hostlistner.directive';
-import { NgclassComponent } from './customeDirectives/ngclass/ngclass.component';
+
+import { ClassDirective } from './customeDirectives/class.directive';
+import { IfDirective } from './customeDirectives/if.directive';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { ServicesComponent } from './components/services/services.component';
+import { AddcourseComponent } from './components/services/addcourse/addcourse.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +49,12 @@ import { NgclassComponent } from './customeDirectives/ngclass/ngclass.component'
     ContentchildComponent,
     SetbackgroundDirective,
     HostlistnerDirective,
-    NgclassComponent
+
+    ClassDirective,
+     IfDirective,
+     NgSwitchComponent,
+     ServicesComponent,
+     AddcourseComponent
   ],
   imports: [
     BrowserModule,

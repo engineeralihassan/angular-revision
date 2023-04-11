@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>NG-Switch directive</h1>
+  <p>
+    ng switch is used to show the specif element in the web page which matches
+    the cases of the switch
+  </p>
+  <h1>The occupation vise View</h1>
+  <div class="div" [ngSwitch]="occ">
+    <p *ngSwitchCase="'teacher'">This is the teacher occupation view</p>
+    <p *ngSwitchCase="'programmer'">This is the programmer occupation view</p>
+    <p *ngSwitchCase="'designer'">This is the designer occupation view</p>
+  </div>
+</div>

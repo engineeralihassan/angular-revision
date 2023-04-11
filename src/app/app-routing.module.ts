@@ -10,7 +10,10 @@ import { ViewchildComponent } from './components/viewchild/viewchild.component';
 import { NgContentComponent } from './components/ng-content/ng-content.component';
 import { LifecyclehooksComponent } from './components/lifecyclehooks/lifecyclehooks.component';
 import { ContentchildComponent } from './components/contentchild/contentchild.component';
-import { NgclassComponent } from './customeDirectives/ngclass/ngclass.component';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { Service1Service } from './services/service1.service';
+import { ServicesComponent } from './components/services/services.component';
+
 
 const routes: Routes = [
   { path: '', component: Component01Component },
@@ -20,12 +23,16 @@ const routes: Routes = [
   { path: 'theory', component: TheoryComponent },
   { path: 'ng-content', component: NgContentComponent },
   { path: 'lifecyclehooks', component: LifecyclehooksComponent },
+  { path: 'customedirective', component: ReferenceVComponent },
   {
     path: 'reference-v', component: ReferenceVComponent
   },
   { path: 'viewchild', component: ViewchildComponent },
   { path: 'contentchild', component: ContentchildComponent },
-  { path: 'appclass', component: NgclassComponent },
+  { path: 'custome-structural-Directives', component: ReferenceVComponent },
+  { path: 'ngSwitch', component: NgSwitchComponent },
+  { path: 'services', component: ServicesComponent },
+
 
 ];
 

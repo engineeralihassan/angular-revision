@@ -1,5 +1,15 @@
-input{
-      padding: 10px 20px ;
-      border: 1px solid black;
-      width: 80%;
+input {
+  padding: 10px 20px;
+  border: 1px solid black;
+  width: 80%;
+}
+.class1 {
+  border: 2px solid black;
+}
+.class2 {
+  background-color: rebeccapurple;
+  color: white;
+}
+.class3 {
+  padding: 10px 20px;
 }

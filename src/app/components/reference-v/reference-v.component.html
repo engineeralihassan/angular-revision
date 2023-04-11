@@ -1,13 +1,27 @@
 <div class="container">
-
-      <h1 class="directiveName">The reference variables in angualr</h1>
-      <p>reference variables are used to reference an element in the dom ;</p>
-      <p>With the use of reference variable we can access the elements in the Ts class of the components </p>
-       <input type="text" placeholder=" enter text" #search   (keyup)="null">
-       <button class="btn" (click)="clickH(search)">click me</button>
-       <p>{{search.value}}</p>
-       <ng-content select="p"></ng-content>
-       <ng-content></ng-content>
-       <p>This is text that we access from the parent to child component class :::{{clg}}</p>
-         <ng-container select="para"></ng-container>
-      </div>
+  <h1 class="directiveName">The reference variables in angualr</h1>
+  <p>reference variables are used to reference an element in the dom ;</p>
+  <p>
+    With the use of reference variable we can access the elements in the Ts
+    class of the components
+  </p>
+  <input type="text" placeholder=" enter text" #search (keyup)="(null)" />
+  <button class="btn" (click)="clickH(search)">click me</button>
+  <p>{{ search.value }}</p>
+  <ng-content select="p"></ng-content>
+  <ng-content></ng-content>
+  <p>
+    This is text that we access from the parent to child component class :::{{
+      clg
+    }}
+  </p>
+  <ng-container select="para"></ng-container>
+  <p [appClass]="{ class1: true, class2: true, class3: true }">
+    This is the paragraph at wich we apply the custome clas directive class
+  </p>
+  <button (click)="show()">show div</button>
+  <p *appIf="display">
+    This is the section where we use the custome structural directives in
+    angular
+  </p>
+</div>

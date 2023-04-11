@@ -1,0 +1,41 @@
+<div class="container">
+  <h1>all about services</h1>
+  <p>
+    this component is only for used the concept of the services the code of the
+    services is is write in the services folder we start from the service 1
+  </p>
+  <h3>service 1 starts</h3>
+  <div class="container1">
+    <div class="card">
+      <h1>This is card 1</h1>
+      <p>
+        This is the card 1 for course 1 Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Numquam, quo.
+      </p>
+      <button class="btn" (click)="enroll($event)">Enroll now js</button>
+    </div>
+    <div class="card">
+      <h1>This is card 1</h1>
+      <p>
+        This is the card 1 for course 1 Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Numquam, quo.
+      </p>
+      <button class="btn" (click)="enroll($event)">Enroll now Ts</button>
+    </div>
+  </div>
+  <h1>This is the used of the Data service</h1>
+  <p>
+    This service is provide us the array of object with the help of the
+    dependency injection becuase we use the single instance of the service in
+    the whole app of the
+  </p>
+  <div class="container1">
+    <app-addcourse></app-addcourse>
+    <div class="card" *ngFor="let c of courses">
+      <h1>{{ c.name }}</h1>
+      <p>{{ c.desc }}</p>
+      <small>{{ c.id }}</small>
+      <button (click)="enroll($event)">{{ c.name }}</button>
+    </div>
+  </div>
+</div>
