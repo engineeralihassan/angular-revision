@@ -36,6 +36,8 @@
       <p>{{ c.desc }}</p>
       <small>{{ c.id }}</small>
       <button (click)="enroll($event)">{{ c.name }}</button>
+      <button class="btn" (click)="selectUser(c)">Details</button>
     </div>
   </div>
+  <app-service-course></app-service-course>
 </div>

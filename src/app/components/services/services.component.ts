@@ -21,6 +21,12 @@ export class ServicesComponent {
   ngOnInit() {
     this.courses = this.dataservice.arr;
   }
+  selectUser(c: any) {
+    this.dataservice.onshowEmit(c);
+  }
+
+
+
 
 
 

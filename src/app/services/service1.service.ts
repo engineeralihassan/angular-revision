@@ -9,4 +9,7 @@ export class Service1Service {
   onEnroll(title: string) {
     alert("This is clicked" + " " + title)
   }
+  message(name: string) {
+    alert("This is clicked" + " " + name)
+  }
 }

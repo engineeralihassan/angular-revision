@@ -28,6 +28,7 @@ import { IfDirective } from './customeDirectives/if.directive';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { ServicesComponent } from './components/services/services.component';
 import { AddcourseComponent } from './components/services/addcourse/addcourse.component';
+import { ServiceCourseComponent } from './components/service-course/service-course.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +55,8 @@ import { AddcourseComponent } from './components/services/addcourse/addcourse.co
      IfDirective,
      NgSwitchComponent,
      ServicesComponent,
-     AddcourseComponent
+     AddcourseComponent,
+     ServiceCourseComponent
   ],
   imports: [
     BrowserModule,
