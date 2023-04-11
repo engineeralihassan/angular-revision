@@ -22,6 +22,7 @@ import { LifecyclehooksComponent } from './components/lifecyclehooks/lifecycleho
 import { ContentchildComponent } from './components/contentchild/contentchild.component';
 import { SetbackgroundDirective } from './customeDirectives/setbackground.directive';
 import { HostlistnerDirective } from './customeDirectives/hostlistner.directive';
+import { NgclassComponent } from './customeDirectives/ngclass/ngclass.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,8 @@ import { HostlistnerDirective } from './customeDirectives/hostlistner.directive'
     LifecyclehooksComponent,
     ContentchildComponent,
     SetbackgroundDirective,
-    HostlistnerDirective
+    HostlistnerDirective,
+    NgclassComponent
   ],
   imports: [
     BrowserModule,

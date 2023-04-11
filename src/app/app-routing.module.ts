@@ -10,6 +10,7 @@ import { ViewchildComponent } from './components/viewchild/viewchild.component';
 import { NgContentComponent } from './components/ng-content/ng-content.component';
 import { LifecyclehooksComponent } from './components/lifecyclehooks/lifecyclehooks.component';
 import { ContentchildComponent } from './components/contentchild/contentchild.component';
+import { NgclassComponent } from './customeDirectives/ngclass/ngclass.component';
 
 const routes: Routes = [
   { path: '', component: Component01Component },
@@ -24,6 +25,7 @@ const routes: Routes = [
   },
   { path: 'viewchild', component: ViewchildComponent },
   { path: 'contentchild', component: ContentchildComponent },
+  { path: 'appclass', component: NgclassComponent },
 
 ];
 
