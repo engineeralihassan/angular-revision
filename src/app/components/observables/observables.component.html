@@ -1,0 +1,54 @@
+<div class="container">
+  <h1>Observables in Angular</h1>
+  <p>
+    observables are used to handle the a syncrouose operations and data in
+    angular
+  </p>
+  <p>
+    observables are work like as the promises in js but the main diffrence is
+    that the the observables are send the data in packets how ever the reciece
+    some short amoun tof data they send it and repeate this untill we get the
+    complete data
+  </p>
+  <p>
+    the promise is send the the data always but observables are only send the
+    data when we need
+  </p>
+  <p>
+    observables are the not the feature of js and angular its the feature of the
+    rxjs li brary
+  </p>
+  <p>
+    we make it with the constructor of the observable class and then emit the
+    data with next method
+  </p>
+  <p>
+    observers take 3 parameters when we subscribe this first for next seconf for
+    error and third for complete
+  </p>
+  <p>if error is occured the other lines of code does not executed</p>
+  <h1>ways of creating observables</h1>
+  <ul>
+    <li>by observables class constructor</li>
+    <li>by observables class constructor crrweate methods</li>
+    <li>by off operatore</li>
+    <li>by from operator</li>
+  </ul>
+  <h1>operators in RXJs</h1>
+  <p>
+    operatora are used to take an observable as an input and transform athe
+    observable data and then return it
+  </p>
+  <p>
+    operators are function which accept observable as paramater and apply some
+    logic to confugure the data
+  </p>
+  <h1>Subjects in angular</h1>
+  <p>
+    The subjects are the used to cross components and they are special type of
+    observables
+  </p>
+  <p>The components which have not the parent child relation ship</p>
+  <h4>The Text we recieved from subjects component</h4>
+  <p>Texr: {{ text }}</p>
+</div>

@@ -13,6 +13,7 @@ import { ContentchildComponent } from './components/contentchild/contentchild.co
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { Service1Service } from './services/service1.service';
 import { ServicesComponent } from './components/services/services.component';
+import { ObservablesComponent } from './components/observables/observables.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,8 @@ const routes: Routes = [
   { path: 'custome-structural-Directives', component: ReferenceVComponent },
   { path: 'ngSwitch', component: NgSwitchComponent },
   { path: 'services', component: ServicesComponent },
+  { path: 'observables', component: ObservablesComponent },
+
 
 
 ];

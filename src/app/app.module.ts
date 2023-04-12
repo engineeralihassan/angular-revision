@@ -29,6 +29,8 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { ServicesComponent } from './components/services/services.component';
 import { AddcourseComponent } from './components/services/addcourse/addcourse.component';
 import { ServiceCourseComponent } from './components/service-course/service-course.component';
+import { ObservablesComponent } from './components/observables/observables.component';
+import { SubjectsComponent } from './components/subjects/subjects.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +58,9 @@ import { ServiceCourseComponent } from './components/service-course/service-cour
      NgSwitchComponent,
      ServicesComponent,
      AddcourseComponent,
-     ServiceCourseComponent
+     ServiceCourseComponent,
+     ObservablesComponent,
+     SubjectsComponent
   ],
   imports: [
     BrowserModule,
