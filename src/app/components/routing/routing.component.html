@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Routing in angular</h1>
+  <P>
+    rOUTING MEANS move page to another but angular is used to make the single
+    page applications then we say move one component to another component
+  </P>
+  <h3>redirecting</h3>
+  <p>path:'' , redirectTo:'Home', pathMatch:'full'</p>
+  <h3>page not found</h3>
+  <p>path:'**' , component:'error page'</p>
+  <h3>router link active</h3>
+  <p>
+    The router link active is used to style and show the current active link in
+    angular
+  </p>
+  <p>
+    <a
+      routerLinkActive="activeClass class2 class 3"
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLink="home"
+    ></a>
+  </p>
+
+  <p>
+    routerLinkActive="activeClass class2 class 3" [routerLinkActiveOptions]=
+    exact: true routerLink="home"
+  </p>
+  <h3>navigate programatically</h3>
+  <p>make the Router instance in the constructor</p>
+  <p>this.router.navigate['home']</p>
+  <p>this.router.navigate['home',relativeToactivatedRoute]</p>
+</div>

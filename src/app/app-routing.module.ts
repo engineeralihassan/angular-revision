@@ -14,6 +14,7 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { Service1Service } from './services/service1.service';
 import { ServicesComponent } from './components/services/services.component';
 import { ObservablesComponent } from './components/observables/observables.component';
+import { RoutingComponent } from './components/routing/routing.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'ngSwitch', component: NgSwitchComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'observables', component: ObservablesComponent },
+  { path: 'routing', component: RoutingComponent }
 
 
 

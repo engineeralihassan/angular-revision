@@ -31,6 +31,7 @@ import { AddcourseComponent } from './components/services/addcourse/addcourse.co
 import { ServiceCourseComponent } from './components/service-course/service-course.component';
 import { ObservablesComponent } from './components/observables/observables.component';
 import { SubjectsComponent } from './components/subjects/subjects.component';
+import { RoutingComponent } from './components/routing/routing.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,7 +61,8 @@ import { SubjectsComponent } from './components/subjects/subjects.component';
      AddcourseComponent,
      ServiceCourseComponent,
      ObservablesComponent,
-     SubjectsComponent
+     SubjectsComponent,
+     RoutingComponent
   ],
   imports: [
     BrowserModule,
