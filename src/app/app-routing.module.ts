@@ -15,12 +15,13 @@ import { Service1Service } from './services/service1.service';
 import { ServicesComponent } from './components/services/services.component';
 import { ObservablesComponent } from './components/observables/observables.component';
 import { RoutingComponent } from './components/routing/routing.component';
+import { DirectivebComponent } from './components/directiveb/directiveb.component';
 
 
 const routes: Routes = [
   { path: '', component: Component01Component },
   { path: 'component2', component: Databinding02Component },
-  { path: 'component3', component: DirectivesComponent },
+  { path: 'builtindirectives', component: DirectivebComponent },
   { path: 'courses', component: MainComponent },
   { path: 'theory', component: TheoryComponent },
   { path: 'ng-content', component: NgContentComponent },
