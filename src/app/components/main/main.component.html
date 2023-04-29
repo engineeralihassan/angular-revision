@@ -1,10 +1,22 @@
 <div class="container">
-      <!-- <app-reference-v #refrence></app-reference-v>
+  <!-- <app-reference-v #refrence></app-reference-v>
       <p>{{refrence.hello}}</p> -->
-      <p>{{textedvalue}}</p>
-      <app-search (onchangeQuery)="searchcourse($event)"></app-search>
-      <app-filter  (gettextvalue)="getTextValue($event)"   (getSelectedradionchange)="getdataFromCustomeEvent($event)" [total]="getall()"  [Free]="getfre()"  [Premium]="getpre()"></app-filter>
-      <app-courses [query]="queryValue" [showcase]="courseshow" [ourstrenght]="ourstrenght" [coursesall]="courses"></app-courses>
-      <button class="btn"><a routerLink="/theory">Theory of this lecture</a></button>
+  <p>{{ textedvalue }}</p>
+  <app-search (onchangeQuery)="searchcourse($event)"></app-search>
+  <app-filter
+    (gettextvalue)="getTextValue($event)"
+    (getSelectedradionchange)="getdataFromCustomeEvent($event)"
+    [total]="getall()"
+    [Free]="getfre()"
+    [Premium]="getpre()"
+  ></app-filter>
+  <app-courses
+    [query]="queryValue"
+    [showcase]="courseshow"
+    [ourstrenght]="ourstrenght"
+    [coursesall]="courses"
+  ></app-courses>
+  <button class="btn">
+    <a routerLink="/theory">Theory of this lecture</a>
+  </button>
 </div>
-

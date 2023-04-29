@@ -1,10 +1,28 @@
 <div class="container">
-      <span> Courses</span>
-      <input type="radio" value="All" name="filter"  (change)="onRadioBtnChange()"   [(ngModel)]="selectedVALUE">
-      <label >{{'All ('+All+')'}}</label>
-         <input type="radio" value="free" name="filter" (change)="onRadioBtnChange()"  [(ngModel)]="selectedVALUE">
-      <label >{{'Free ('+Free+')'}}</label>
-         <input type="radio" value="premium" name="filter" (change)="onRadioBtnChange()"  [(ngModel)]="selectedVALUE">
-      <label >{{'Premium ('+Premium+')'}}</label>
-      <button (click)="onpassText()">change</button>
+  <span>Courses</span>
+  <input
+    type="radio"
+    value="All"
+    name="filter"
+    (change)="onRadioBtnChange()"
+    [(ngModel)]="selectedVALUE"
+  />
+  <label>{{ 'All (' + All + ')' }}</label>
+  <input
+    type="radio"
+    value="free"
+    name="filter"
+    (change)="onRadioBtnChange()"
+    [(ngModel)]="selectedVALUE"
+  />
+  <label>{{ 'Free (' + Free + ')' }}</label>
+  <input
+    type="radio"
+    value="premium"
+    name="filter"
+    (change)="onRadioBtnChange()"
+    [(ngModel)]="selectedVALUE"
+  />
+  <label>{{ 'Premium (' + Premium + ')' }}</label>
+  <button (click)="onpassText()">change</button>
 </div>
