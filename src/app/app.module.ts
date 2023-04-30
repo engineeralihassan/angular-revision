@@ -33,6 +33,8 @@ import { ObservablesComponent } from './components/observables/observables.compo
 import { SubjectsComponent } from './components/subjects/subjects.component';
 import { RoutingComponent } from './components/routing/routing.component';
 import { DirectivebComponent } from './components/directiveb/directiveb.component';
+import { ProductsComponent } from './components/products/products.component';
+import { FilterformComponent } from './components/filterform/filterform.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +66,9 @@ import { DirectivebComponent } from './components/directiveb/directiveb.componen
      ObservablesComponent,
      SubjectsComponent,
      RoutingComponent,
-     DirectivebComponent
+     DirectivebComponent,
+     ProductsComponent,
+     FilterformComponent
   ],
   imports: [
     BrowserModule,
