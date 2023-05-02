@@ -7,7 +7,7 @@ import { Component01Component } from './component01/component01.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Databinding02Component } from './databinding02/databinding02.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './Directives/directives/directives.component';
 import { SearchComponent } from './components/search/search.component';
 import { FilterComponent } from './components/filter/filter.component';
@@ -35,6 +35,9 @@ import { RoutingComponent } from './components/routing/routing.component';
 import { DirectivebComponent } from './components/directiveb/directiveb.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FilterformComponent } from './components/filterform/filterform.component';
+import { TestingComponent } from './components/testing/testing.component';
+import { TdformsComponent } from './components/tdforms/tdforms.component';
+import { RformsComponent } from './components/rforms/rforms.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,12 +71,16 @@ import { FilterformComponent } from './components/filterform/filterform.componen
      RoutingComponent,
      DirectivebComponent,
      ProductsComponent,
-     FilterformComponent
+     FilterformComponent,
+     TestingComponent,
+     TdformsComponent,
+     RformsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

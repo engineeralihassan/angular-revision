@@ -1,0 +1,38 @@
+<h1>reactive-forms in angular</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input id="name" type="text" formControlName="name">
+  
+    <label for="gender">Gender:</label>
+    <div>
+      <label>
+        <input type="radio" name="gender" value="male" formControlName="gender"> Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female" formControlName="gender"> Female
+      </label>
+    </div>
+  
+    <label for="age">Age:</label>
+    <select id="age" formControlName="age">
+      <option value="">Select an age range</option>
+      <option value="18-25">18-25</option>
+      <option value="26-35">26-35</option>
+      <option value="36-50">36-50</option>
+      <option value="51+">51+</option>
+    </select>
+  
+    <label for="comments">Comments:</label>
+    <textarea id="comments" formControlName="comments"></textarea>
+  
+    <button type="submit">Submit</button>
+  </form>
+  
+  <div>
+    <h2>Submitted Form Data:</h2>
+    <p>Name: {{ form.value.name }}</p>
+    <p>Gender: {{ form.value.gender }}</p>
+    <p>Age: {{ form.value.age }}</p>
+    <p>Comments: {{ form.value.comments }}</p>
+  </div> 
+  

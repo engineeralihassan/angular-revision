@@ -16,6 +16,8 @@ import { ServicesComponent } from './components/services/services.component';
 import { ObservablesComponent } from './components/observables/observables.component';
 import { RoutingComponent } from './components/routing/routing.component';
 import { DirectivebComponent } from './components/directiveb/directiveb.component';
+import { TdformsComponent } from './components/tdforms/tdforms.component';
+import { RformsComponent } from './components/rforms/rforms.component';
 
 
 const routes: Routes = [
@@ -30,6 +32,8 @@ const routes: Routes = [
   {
     path: 'reference-v', component: ReferenceVComponent
   },
+  {path : 'reactive-forms', component: RformsComponent},
+  {path:"forms", component : TdformsComponent},
   { path: 'viewchild', component: ViewchildComponent },
   { path: 'contentchild', component: ContentchildComponent },
   { path: 'custome-structural-Directives', component: ReferenceVComponent },
